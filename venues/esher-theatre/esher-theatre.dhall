@@ -14,7 +14,7 @@ in
     , postalCode = "KT10 9RA"
     , country = None Text
     } : Schema.Address
-  , image = Some ./esher-theatre.esher-theatre.webp as Location
+  , image = Some ./esher-theatre.webp as Location
   , boundaries =
     [ { longitude = -0.3627949, latitude = 51.3704563 }
     , { longitude = -0.3629022, latitude = 51.3703939 }
