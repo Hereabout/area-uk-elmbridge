@@ -32,4 +32,5 @@ in
     , { longitude = -0.3667257, latitude = 51.3716641 }
     , { longitude = -0.3667264, latitude = 51.3716632 }
     ]
+  , phoneNumber = Some "+441372464014"
   } : Schema.Venue

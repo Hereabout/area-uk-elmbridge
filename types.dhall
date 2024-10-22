@@ -30,6 +30,7 @@ let Venue =
   , boundaries : List GPSPosition
   , image : Optional Prelude.Location.Type
   , content : Content
+  , phoneNumber : Optional Text
   }
 
 let Place =

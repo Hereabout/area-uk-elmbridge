@@ -32,4 +32,5 @@ in
       , latitude = 51.36947107250434
       }
     ]
+  , phoneNumber = None Text
   } : Schema.Venue
