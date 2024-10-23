@@ -20,7 +20,7 @@ Hereabout uses Hereabout Object IDs (hoids) to identify objects such as venues, 
 
 The first part of the hoid will always be the same in this repository. Elmbridge is identified by the ulid `01J8FWH1S4TQWJGP4YGS5GZ7NH` and hence all the hoids contained here should start with this value.
 
-If you wish to create a new object, simply run the `ulid` command and concatenate the result onto the end of the ulid above.
+If you wish to create a new object you will need to create an ID for it. To do this, simply run the `ulid` command and concatenate the result onto the end of the ulid above.
 
 e.g. if `ulid` returns `00000000000000000000000001` you would make the hoid `01J8FWH1S4TQWJGP4YGS5GZ7NH00000000000000000000000001`.
 
