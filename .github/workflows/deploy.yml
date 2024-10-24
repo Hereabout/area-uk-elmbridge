@@ -23,5 +23,5 @@ jobs:
         POSTGRES_PW: ${{ secrets.POSTGRES_PW }}
       run: |
         cd nix/cli
-        nix develop --ignore-environment --keep AREA_ULID --keep POSTGRES_URL --keep POSTGRES_USER --keep POSTGRES_PW cd ../../ && hereabout-cli diff --path elmbridge.dhall
+        nix develop --ignore-environment --keep AREA_ULID --keep POSTGRES_URL --keep POSTGRES_USER --keep POSTGRES_PW cd ../.. && hereabout-cli diff --path elmbridge.dhall
         
