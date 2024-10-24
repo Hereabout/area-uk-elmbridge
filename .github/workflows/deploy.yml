@@ -11,14 +11,13 @@ jobs:
           sudo rm -rf /usr/share/dotnet
           sudo rm -rf "$AGENT_TOOLSDIRECTORY"
     - uses: actions/checkout@v4
-    - name: CLI
-      uses: robinraju/release-downloader@v1
+    - uses: cachix/install-nix-action@v27
       with:
-        repository: 'Hereabout/hereabout-mono'
-        latest: true
-        preRelease: true
-        fileName: 'hacli'
-        token: ${{ secrets.HEREABOUT_CLI_TOKEN }}
+        github_access_token: ${{ secrets.GITHUB_TOKEN }}
+    - name: Acquire CLI with Nix
       run: |
-        chmod +x hacli
-        ./hacli diff
+        cd nix/cli
+        nix develop --option access-tokens= github.com=${{ secrets.HEREABOUT_CLI_TOKEN }}
+    - name: Apply Diff
+      run: |
+        hereabout-cli diff
