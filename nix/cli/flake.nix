@@ -4,7 +4,7 @@
   inputs = {
      nixpkgs.url = "github:nixos/nixpkgs?ref=nixos-unstable";
      flake-utils.url = "github:numtide/flake-utils";
-     hereaboutPkg.url = "github:Hereabout/hereabout-mono";
+     hereaboutPkg.url = "github:Hereabout/hereabout-mono?ref=main";
   };
 
   outputs = { self, nixpkgs, flake-utils, hereaboutPkg }:

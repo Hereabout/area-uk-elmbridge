@@ -51,6 +51,7 @@
       },
       "original": {
         "owner": "Hereabout",
+        "ref": "main",
         "repo": "hereabout-mono",
         "type": "github"
       }
