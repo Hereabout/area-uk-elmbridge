@@ -44,13 +44,14 @@
       "locked": {
         "lastModified": 1729730994,
         "narHash": "sha256-2BJhOoXOjPzmCwLH+6TOZ+mcYouiyGvLIDWBkkRXxok=",
-        "ref": "refs/heads/main",
+        "ref": "main",
         "rev": "58d6bd8b4da5dea7a36689687fa7d9f95b9a8e24",
         "revCount": 49,
         "type": "git",
         "url": "ssh://git@github.com/Hereabout/hereabout-mono"
       },
       "original": {
+        "ref": "main",
         "type": "git",
         "url": "ssh://git@github.com/Hereabout/hereabout-mono"
       }
