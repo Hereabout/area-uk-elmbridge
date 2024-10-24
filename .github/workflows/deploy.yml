@@ -19,6 +19,9 @@ jobs:
         preRelease: true
         fileName: 'hacli'
         token: ${{ secrets.HEREABOUT_CLI_TOKEN }}
+    - name: Update CLI Permissions
+      run: |
+        chmod +x hacli
     - name: Apply CLI Diff
       run: |
         ./hacli diff
