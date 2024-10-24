@@ -1,0 +1,24 @@
+name: "Apply Diff"
+on:
+  pull_request:
+    branches: [ "main" ]
+jobs:
+  applydiff:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Remove unnecessary files
+      run: |
+          sudo rm -rf /usr/share/dotnet
+          sudo rm -rf "$AGENT_TOOLSDIRECTORY"
+    - uses: actions/checkout@v4
+    - name: Download CLI
+    - uses: robinraju/release-downloader@v1
+      with:
+        repository: 'Hereabout/hereabout-mono'
+        latest: true
+        preRelease: true
+        fileName: 'hacli'
+        token: ${{ secrets.HEREABOUT_CLI_TOKEN }}
+    - name: Apply CLI Diff
+      run: |
+        hacli diff
