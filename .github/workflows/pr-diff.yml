@@ -21,4 +21,4 @@ jobs:
         token: ${{ secrets.HEREABOUT_CLI_TOKEN }}
     - name: Apply CLI Diff
       run: |
-        hacli diff
+        ./hacli diff
