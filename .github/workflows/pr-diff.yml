@@ -1,4 +1,4 @@
-name: "Apply Diff"
+name: "PR Diff"
 on:
   pull_request:
     branches: [ "main" ]
@@ -12,7 +12,7 @@ jobs:
           sudo rm -rf "$AGENT_TOOLSDIRECTORY"
     - uses: actions/checkout@v4
     - name: Download CLI
-    - uses: robinraju/release-downloader@v1
+      uses: robinraju/release-downloader@v1
       with:
         repository: 'Hereabout/hereabout-mono'
         latest: true
