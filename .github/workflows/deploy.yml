@@ -17,7 +17,7 @@ jobs:
     - name: Acquire CLI with Nix
       run: |
         cd nix/cli
-        nix develop --option access-tokens= github.com=${{ secrets.HEREABOUT_CLI_TOKEN }}
+        nix develop --option extra-access-tokens github.com=${{ secrets.HEREABOUT_CLI_TOKEN }}
     - name: Apply Diff
       run: |
         hereabout-cli diff

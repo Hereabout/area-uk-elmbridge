@@ -44,16 +44,15 @@
       "locked": {
         "lastModified": 1729730994,
         "narHash": "sha256-2BJhOoXOjPzmCwLH+6TOZ+mcYouiyGvLIDWBkkRXxok=",
-        "ref": "main",
+        "owner": "Hereabout",
+        "repo": "hereabout-mono",
         "rev": "58d6bd8b4da5dea7a36689687fa7d9f95b9a8e24",
-        "revCount": 49,
-        "type": "git",
-        "url": "ssh://git@github.com/Hereabout/hereabout-mono"
+        "type": "github"
       },
       "original": {
-        "ref": "main",
-        "type": "git",
-        "url": "ssh://git@github.com/Hereabout/hereabout-mono"
+        "owner": "Hereabout",
+        "repo": "hereabout-mono",
+        "type": "github"
       }
     },
     "nixpkgs": {
