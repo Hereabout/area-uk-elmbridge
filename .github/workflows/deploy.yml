@@ -11,7 +11,7 @@ jobs:
           sudo rm -rf /usr/share/dotnet
           sudo rm -rf "$AGENT_TOOLSDIRECTORY"
     - uses: actions/checkout@v4
-    - name: Download CLI
+    - name: CLI
       uses: robinraju/release-downloader@v1
       with:
         repository: 'Hereabout/hereabout-mono'
@@ -19,9 +19,6 @@ jobs:
         preRelease: true
         fileName: 'hacli'
         token: ${{ secrets.HEREABOUT_CLI_TOKEN }}
-    - name: Update CLI Permissions
       run: |
         chmod +x hacli
-    - name: Apply CLI Diff
-      run: |
         ./hacli diff
