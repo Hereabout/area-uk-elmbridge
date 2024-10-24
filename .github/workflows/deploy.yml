@@ -13,11 +13,11 @@ jobs:
     - uses: actions/checkout@v4
     - uses: cachix/install-nix-action@v30
       with:
-        github_access_token: ${{ secrets.GITHUB_TOKEN }}
+        github_access_token: ${{ secrets.HEREABOUT_CLI_TOKEN }}
     - name: Acquire CLI with Nix
       run: |
         cd nix/cli
-        nix develop --option extra-access-tokens github.com=${{ secrets.HEREABOUT_CLI_TOKEN }}
+        nix develop
     - name: Apply Diff
       run: |
         hereabout-cli diff
