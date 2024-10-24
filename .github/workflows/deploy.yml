@@ -14,10 +14,9 @@ jobs:
     - uses: cachix/install-nix-action@v30
       with:
         github_access_token: ${{ secrets.HEREABOUT_CLI_TOKEN }}
-    - name: Acquire CLI with Nix
+    - uses: DeterminateSystems/magic-nix-cache-action@v2
+    - name: CLI Apply Diff
       run: |
         cd nix/cli
         nix develop
-    - name: Apply Diff
-      run: |
         hereabout-cli diff
