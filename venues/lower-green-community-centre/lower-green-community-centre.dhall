@@ -3,7 +3,7 @@ let Prelude = https://prelude.dhall-lang.org/v20.0.0/package.dhall
 
 in 
   { name = "Lower Green Community Centre"
-  , id = "01J8FWH1S4TQWJGP4YGS5GZ7NH01J8FWH1S4TQWJGP4YGS5GZ7Z0"
+  , id = "01J8FWH1S4TQWJGP4YGS5GZ7NH01JB0HG5207EQP4JJ1TARKW4MF"
   , content = Schema.Content.ParagraphsContent [ "The Lower Green Community Centre is a welcoming community hub where local people can meet for a chat, take part in activities and receive help and support when needed." ]
   , address = 
     { addressLine1 = "Recreation Ground"
