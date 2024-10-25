@@ -1,4 +1,4 @@
-name: "PR Diff"
+name: "Print Area Diff for PR"
 on:
   pull_request:
     branches: [ "main" ]
@@ -11,17 +11,16 @@ jobs:
           sudo rm -rf /usr/share/dotnet
           sudo rm -rf "$AGENT_TOOLSDIRECTORY"
     - uses: actions/checkout@v4
-    - name: Download CLI
-      uses: robinraju/release-downloader@v1
+    - uses: cachix/install-nix-action@v30
       with:
-        repository: 'Hereabout/hereabout-mono'
-        latest: true
-        preRelease: true
-        fileName: 'hacli'
-        token: ${{ secrets.HEREABOUT_CLI_TOKEN }}
-    - name: Update CLI Permissions
+        github_access_token: ${{ secrets.HEREABOUT_CLI_TOKEN }}
+    - uses: DeterminateSystems/magic-nix-cache-action@v2
+    - name: CLI Apply Diff
+      env:
+        AREA_ULID: ${{ secrets.AREA_ULID }}
+        POSTGRES_URL: ${{ secrets.POSTGRES_URL }}
+        POSTGRES_USER: ${{ secrets.POSTGRES_USER }}
+        POSTGRES_PW: ${{ secrets.POSTGRES_PW }}
       run: |
-        chmod +x hacli
-    - name: Apply CLI Diff
-      run: |
-        ./hacli diff
+        nix develop .#hcli --ignore-environment --keep AREA_ULID --keep POSTGRES_URL --keep POSTGRES_USER --keep POSTGRES_PW --command hereabout-cli diff --path elmbridge.dhall
+        

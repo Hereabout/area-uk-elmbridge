@@ -1,4 +1,4 @@
-name: "Apply Diff"
+name: "Apply Area Diff"
 on:
   push:
     branches: [ "main" ]
@@ -22,5 +22,5 @@ jobs:
         POSTGRES_USER: ${{ secrets.POSTGRES_USER }}
         POSTGRES_PW: ${{ secrets.POSTGRES_PW }}
       run: |
-        nix develop .#hcli --ignore-environment --keep AREA_ULID --keep POSTGRES_URL --keep POSTGRES_USER --keep POSTGRES_PW --command hereabout-cli diff --path elmbridge.dhall
+        nix develop .#hcli --ignore-environment --keep AREA_ULID --keep POSTGRES_URL --keep POSTGRES_USER --keep POSTGRES_PW --command hereabout-cli diff apply --path elmbridge.dhall
         
