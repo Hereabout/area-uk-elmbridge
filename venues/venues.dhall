@@ -1,4 +1,6 @@
+
 let esherLibrary = ./esher-library/esher-library.dhall
+let esherRugbyClub = ./esher-rugby-club/esher-rugby-club.dhall
 let bearHotelEsher = ./the-bear-hotel-esher/bear-hotel.dhall
 let esherTheatre = ./esher-theatre/esher-theatre.dhall
 let lowerGreenCommunityCentre = ./lower-green-community-centre/lower-green-community-centre.dhall
@@ -9,6 +11,7 @@ let theWheatsheafEsher = ./the-wheatsheaf-esher/the-wheatshear.dhall
 in 
   [ bearHotelEsher
   , esherLibrary
+  , esherRugbyClub
   , esherTheatre
   , lowerGreenCommunityCentre
   , sanddownParkRacecourse
