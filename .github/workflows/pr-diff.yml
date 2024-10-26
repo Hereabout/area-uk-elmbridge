@@ -15,6 +15,12 @@ jobs:
       with:
         github_access_token: ${{ secrets.HEREABOUT_CLI_TOKEN }}
     - uses: DeterminateSystems/magic-nix-cache-action@v2
+    - name: Set Locale
+      run: |
+        sudo apt-get update && sudo apt-get install tzdata locales -y && sudo locale-gen en-GB.UTF-8
+        sudo localectl set-locale LANG="en-GB.UTF-8"
+        export LANG="en-GB.UTF-8"
+        sudo update-locale
     - name: CLI Apply Diff
       env:
         AREA_ULID: ${{ secrets.AREA_ULID }}
