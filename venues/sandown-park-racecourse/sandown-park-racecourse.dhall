@@ -4,7 +4,7 @@ let Prelude = https://prelude.dhall-lang.org/v20.0.0/package.dhall
 in 
   { name = "Sandown Park Racecourse"
   , id = "01J8FWH1S4TQWJGP4YGS5GZ7NH01JB31Z4Z7FVVFXE5K9SBHC4XF"
-  , content = Schema.Content.ParagraphsContent [ "Sandown Park " ]
+  , content = Schema.Content.ParagraphsContent [ "Sandown Park Racecourse is a premier horse racing venue in Surrey, England, known for its picturesque setting and hosting both flat and jump racing events throughout the year." ]
   , address = 
     { addressLine1 = "Portsmouth Road"
     , addressLine2 = None Text
