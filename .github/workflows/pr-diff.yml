@@ -17,9 +17,9 @@ jobs:
     - uses: DeterminateSystems/magic-nix-cache-action@v2
     - name: Set Locale
       run: |
-        sudo apt-get update && sudo apt-get install tzdata locales -y && sudo locale-gen en-GB.UTF-8
-        sudo localectl set-locale LANG="en-GB.UTF-8"
-        export LANG="en-GB.UTF-8"
+        sudo apt-get update && sudo apt-get install tzdata locales -y && sudo locale-gen en-US.UTF-8
+        sudo localectl set-locale LANG="en-US.UTF-8"
+        export LANG="en-US.UTF-8"
         sudo update-locale
     - name: CLI Apply Diff
       env:
