@@ -1,13 +1,15 @@
 let Schema = ./types.dhall
 let Prelude = https://prelude.dhall-lang.org/v20.0.0/package.dhall
 let allVenues = ./venues/venues.dhall
+let eventsF = ./events/F.dhall
 
 in 
   { name = "Elmbridge"
   , id = "01J8FWH1S4TQWJGP4YGS5GZ7NH"
   , boundaries = Schema.MultiPolygon.WKT (./elmbridge-wkt.txt as Text)
   , events = 
-    [ ] : List Schema.Event
+    [ eventsF.fireworksSpooktacular
+    ] : List Schema.Event
   , venues = allVenues : List Schema.Venue
   , tzLabel = Schema.TZLabel.Europe/London
   , communities = 
