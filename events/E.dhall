@@ -15,7 +15,7 @@ in
     , tags = [] : List Text
     , revisions = [] : List Schema.EventRevision
     , signupUrl = None Schema.Url
-    , timestamp = 2024-11-11T17:00:00Z
+    , timestamp = 2024-11-01T17:00:00Z
     , duration = Schema.Duration.Mins 390
     , image = Some ./esher-rugby-fireworks-night.webp as Location
     } : Schema.Event
