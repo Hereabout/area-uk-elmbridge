@@ -14,7 +14,7 @@ in
     , repetition = None Schema.RepetitionPattern
     , tags = [] : List Text
     , revisions = [] : List Schema.EventRevision
-    , signupUrl = None Schema.Url
+    , signupUrl = Some "https://www.eventbrite.co.uk/e/esher-fireworks-night-tickets-1004582472217"
     , timestamp = 2024-11-01T17:00:00Z
     , duration = Schema.Duration.Mins 390
     , image = Some ./esher-rugby-fireworks-night.webp as Location

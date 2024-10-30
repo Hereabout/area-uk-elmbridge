@@ -14,7 +14,7 @@ in
     , repetition = None Schema.RepetitionPattern
     , tags = [] : List Text
     , revisions = [] : List Schema.EventRevision
-    , signupUrl = None Schema.Url
+    , signupUrl = Some "https://www.thejockeyclub.co.uk/sandown/events-tickets/fireworks/tickets/"
     , timestamp = 2024-10-31T18:00:00Z
     , duration = Schema.Duration.Hours 2
     , image = Some ./fireworks-spooktacular.webp as Location
