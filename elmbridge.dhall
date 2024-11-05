@@ -3,6 +3,7 @@ let Prelude = https://prelude.dhall-lang.org/v20.0.0/package.dhall
 let allVenues = ./venues/venues.dhall
 let eventsE = ./events/E.dhall
 let eventsF = ./events/F.dhall
+let eventsR = ./events/R.dhall
 
 in 
   { name = "Elmbridge"
@@ -11,6 +12,7 @@ in
   , events = 
     [ eventsE.esherRugbyFireworksNight
     , eventsF.fireworksSpooktacular
+    , eventsR.ratPackChrimstasInVegas
     ] : List Schema.Event
   , venues = allVenues : List Schema.Venue
   , tzLabel = Schema.TZLabel.Europe/London
