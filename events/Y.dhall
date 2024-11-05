@@ -23,6 +23,6 @@ in
     , signupUrl = None Text
     , timestamp = 2024-11-09T11:30:00Z
     , duration = Schema.Duration.Mins 30
-    , image = None Prelude.Location.Type
+    , image = Some ./younger-babies-rhymetime.webp as Location
     } : Schema.Event
   }
