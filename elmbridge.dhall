@@ -8,7 +8,9 @@ let eventsF = ./events/F.dhall
 let eventsP = ./events/P.dhall
 let eventsR = ./events/R.dhall
 let eventsS = ./events/S.dhall
+let eventsW = ./events/W.dhall
 let eventsY = ./events/Y.dhall
+
 
 in 
   { name = "Elmbridge"
@@ -22,6 +24,8 @@ in
     , eventsP.pebbleRhymetime
     , eventsR.ratPackChrimstasInVegas
     , eventsS.storytime
+    , eventsS.sundayNightQuizAtTheBear
+    , eventsW.wreathMakingWorkshop
     , eventsY.youngerBabiesRhymetime
     ] : List Schema.Event
   , venues = allVenues : List Schema.Venue
