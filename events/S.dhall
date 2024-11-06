@@ -45,7 +45,7 @@ in
     , tags = [] : List Text
     , revisions = [] : List Schema.EventRevision
     , signupUrl = None Text
-    , timestamp = 2024-11-11T20:00:00Z
+    , timestamp = 2024-11-10T20:00:00Z
     , duration = Schema.Duration.Mins 30
     , image = Some ./sunday-night-quiz-at-the-bear.jpg as Location
     } : Schema.Event
