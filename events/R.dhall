@@ -8,7 +8,8 @@ in
     { name = "The Rat Pack Christmas In Vegas"
     , id = "01J8FWH1S4TQWJGP4YGS5GZ7NH01JBWZB1EDGWPGWHN6SWGQRQBY"
     , content = Schema.Content.ParagraphsContent
-      [ "The Rat Pack Christmas In Vegas is a celebrated tribute show, recreating Christmas at The Sands with classic songs like \"My Way\", \"New York, New York\" alongside Christmas favourites such as \"White Christmas\". Direct from venues like London's Leicester Square Theatre and The O2, the show stars David Alacey as Frank Sinatra, Paul Drakeley as Dean Martin and Des Coleman as Sammy Davis Jr."
+      [ "The Rat Pack Christmas In Vegas is a celebrated tribute show, recreating Christmas at The Sands with classic songs like \"My Way\", \"New York, New York\" alongside Christmas favourites such as \"White Christmas\"." 
+      , "Arriving direct from venues like London's Leicester Square Theatre and The O2, the show stars David Alacey as Frank Sinatra, Paul Drakeley as Dean Martin and Des Coleman as Sammy Davis Jr."
       ]
     , place = Schema.Place.Venue esherTheatre
     , repetition = None Schema.RepetitionPattern
