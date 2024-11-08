@@ -14,7 +14,7 @@ in
       ]
     , place = Schema.Place.Venue esherLibrary
     , repetition = None Schema.RepetitionPattern
-    , tags = [] : List Text
+    , eventType = None Schema.EventType
     , revisions = [] : List Schema.EventRevision
     , signupUrl = None Text
     , timestamp = 2024-11-16T09:30:00Z
