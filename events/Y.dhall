@@ -18,7 +18,7 @@ in
           { frequency = (dsl.every 1).weeks.on [Schema.DayOfWeek.Saturday]
           , stopCondition = Schema.StopRepitition.Never
           }
-    , tags = [] : List Text
+    , eventType = Some Schema.EventType.ChildrensEvent
     , revisions = [] : List Schema.EventRevision
     , signupUrl = None Text
     , timestamp = 2024-11-09T11:30:00Z

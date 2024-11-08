@@ -103,6 +103,30 @@ let Duration =
 
 let Url = Text -- this will be validated at runtime
 
+let EventType =
+  < BusinessEvent
+  | ChildrensEvent
+  | ComedyEvent
+  | ConferenceEvent
+  | CulturalEvent
+  | EducationEvent
+  | ExhibitionEvent
+  | FairEvent
+  | FashionEvent
+  | FestivalEvent
+  | FoodEvent
+  | LiteraryEvent
+  | MusicEvent
+  | PublicationEvent
+  | ReligiousEvent
+  | SalesEvent
+  | ScreeningEvent
+  | SocialEvent
+  | SportsEvent
+  | TheatreEvent
+  | VisualArtsEvent
+  >
+
 let Event =
   { name : Text
   , id : Text
@@ -110,7 +134,7 @@ let Event =
   , timestamp : Timestamp
   , duration : Duration
   , repetition : Optional RepetitionPattern
-  , tags : List Text
+  , eventType : Optional EventType
   , content : Content
   , revisions : List EventRevision
   , signupUrl : Optional Url
@@ -164,6 +188,7 @@ in
   , RepetitionPattern = RepetitionPattern
   , Content = Content
   , EventRevision = EventRevision
+  , EventType = EventType
   , Event = Event
   , TZLabel = TZLabel
   , Area = Area

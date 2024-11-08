@@ -19,8 +19,6 @@ in
   , events = 
     [ eventsA.artAndDrawingClubForAdults
     , eventsC.collectAFreeTree
-    , eventsE.esherRugbyFireworksNight
-    , eventsF.fireworksSpooktacular
     , eventsP.pebbleRhymetime
     , eventsR.ratPackChrimstasInVegas
     , eventsS.storytime
