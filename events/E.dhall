@@ -15,7 +15,7 @@ in
       ]
     , place = Schema.Place.Venue esherTheatre
     , repetition = None Schema.RepetitionPattern
-    , eventType = Some Schema.EventType.VisualArtsEvent
+    , eventType = Some Schema.EventType.TheatreEvent
     , revisions = [] : List Schema.EventRevision
     , signupUrl = Some "https://eshertheatre-tickets.ticketsolve.com/ticketbooth/shows/1173653134"
     , timestamp = 2025-02-13T19:30:00Z
