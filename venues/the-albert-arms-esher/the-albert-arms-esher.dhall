@@ -14,7 +14,7 @@ in
     , postalCode = "KT10 9QS"
     , country = None Text
     } : Schema.Address
-  , image = None Prelude.Location.Type
+  , image = Some ./the-albert-arms.jpg as Location
   , boundaries =
     [ { longitude = -0.3666754, latitude = 51.3692427 }
     , { longitude = -0.3664226, latitude = 51.3690167 }
