@@ -8,6 +8,7 @@ let eventsF = ./events/F.dhall
 let eventsP = ./events/P.dhall
 let eventsR = ./events/R.dhall
 let eventsS = ./events/S.dhall
+let eventsT = ./events/T.dhall
 let eventsW = ./events/W.dhall
 let eventsY = ./events/Y.dhall
 
@@ -19,11 +20,14 @@ in
   , events = 
     [ eventsA.artAndDrawingClubForAdults
     , eventsC.collectAFreeTree
+    , eventsE.eveningWithBrianBlessed
     , eventsP.pebbleRhymetime
     , eventsR.ratPackChrimstasInVegas
     , eventsR.robinHoodPanto
     , eventsS.storytime
     , eventsS.sundayNightQuizAtTheBear
+    , eventsT.totallyBlondie
+    , eventsW.wildMurphys
     , eventsW.wreathMakingWorkshop
     , eventsY.youngerBabiesRhymetime
     ] : List Schema.Event
