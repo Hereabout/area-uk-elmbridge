@@ -21,6 +21,7 @@ in
     , eventsC.collectAFreeTree
     , eventsP.pebbleRhymetime
     , eventsR.ratPackChrimstasInVegas
+    , eventsR.robinHoodPanto
     , eventsS.storytime
     , eventsS.sundayNightQuizAtTheBear
     , eventsW.wreathMakingWorkshop
