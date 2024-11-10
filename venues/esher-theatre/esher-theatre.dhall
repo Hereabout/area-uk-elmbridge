@@ -4,7 +4,7 @@ let Prelude = https://prelude.dhall-lang.org/v20.0.0/package.dhall
 in 
   { name = "Esher Theatre"
   , id = "01J8FWH1S4TQWJGP4YGS5GZ7NH01J8FWH1S4TQWJGP4YGS5GZ7Z2"
-  , content = Schema.Content.ParagraphsContent [ "Esher Theatre is a theatre in Esher." ]
+  , content = Schema.Content.ParagraphsContent [ "Esher Theatre is a theatre in Esher which opened in September 2021. It is one of the largest workable stages in Elmbridge and has capacity for 200 seated and 350 standing." ]
   , address = 
     { addressLine1 = "Community Walk"
     , addressLine2 = None Text
