@@ -21,6 +21,7 @@ in
   , esherTheatre
   , everymanEsher
   , lowerGreenCommunityCentre
+  , marneysVillageInn
   , sanddownParkRacecourse
   , theAlbertArmsEsher
   , theBearHotelEsher
