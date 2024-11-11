@@ -34,13 +34,15 @@ in
     , place = Schema.Place.Venue theBearHotelEsher
     , repetition = 
         Some 
-          { frequency = Schema.Periodicity.Fixed [ 2024-11-11T19:00:00Z ]
+          { frequency = Schema.Periodicity.Fixed 
+            [ 2024-12-11T19:00:00Z 
+            ]
           , stopCondition = Schema.StopRepitition.Never
           }
     , eventType = None Schema.EventType
     , revisions = [] : List Schema.EventRevision
     , signupUrl = None Text
-    , timestamp = 2024-11-04T11:00:00Z
+    , timestamp = 2024-12-04T11:00:00Z
     , duration = Schema.Duration.Mins 150
     , image = Some ./wreath-making-workshop.webp as Location
     } : Schema.Event
