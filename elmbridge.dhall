@@ -23,6 +23,7 @@ in
     , eventsA.artAndDrawingClubForAdults
     , eventsC.collectAFreeTree
     , eventsE.eveningWithBrianBlessed
+    , eventsP.parishCommunionEsher
     , eventsP.pebbleRhymetime
     , eventsR.ratPackChrimstasInVegas
     , eventsR.robinHoodPanto
