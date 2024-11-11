@@ -15,7 +15,7 @@ in
       ]
     , place = Schema.Place.Venue marneysVillageInn
     , repetition = None Schema.RepetitionPattern
-    , eventType = Some Schema.EventType.MusicEvent
+    , eventType = Some Schema.EventType.SocialEvent
     , revisions = [] : List Schema.EventRevision
     , signupUrl = None Text
     , timestamp = 2024-11-30T19:00:00Z
