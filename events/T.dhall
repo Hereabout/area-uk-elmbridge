@@ -1,10 +1,50 @@
 let Schema = ../types.dhall
 
 let Prelude = https://prelude.dhall-lang.org/v20.0.0/package.dhall
+let emberSportsClub = ../venues/ember-sports-club/ember-sports-club.dhall
 let esherTheatre = ../venues/esher-theatre/esher-theatre.dhall
+let marneysVillageInn = ../venues/marneys-village-inn/marneys-village-inn.dhall
+let dsl = ../dsl.dhall
 
 in 
-  { totallyBlondie = 
+  { theBigQuizNightMarneys = 
+    { name = "The Big Quiz Night"
+    , id = "01J8FWH1S4TQWJGP4YGS5GZ7NH01JCDV9SAPKMJJ6663FFSQ2TFZ"
+    , content = Schema.Content.ParagraphsContent
+      [ "The Big Pub Quiz Night at Marney's for teams of 4 people starting at 7pm."
+      ]
+    , place = Schema.Place.Venue marneysVillageInn
+    , repetition = None Schema.RepetitionPattern
+    , eventType = Some Schema.EventType.SocialEvent
+    , revisions = [] : List Schema.EventRevision
+    , signupUrl = None Text
+    , timestamp = 2024-11-30T19:00:00Z
+    , duration = Schema.Duration.Mins 90
+    , image = Some ./the-big-quiz-night-marneys.jpg as Location
+    } : Schema.Event
+    
+  , thursdayTennisDrills = 
+    { name = "Thursday Tennis Drills"
+    , id = "01J8FWH1S4TQWJGP4YGS5GZ7NH01JCDV9SAPKMJJ6663FFSQ2TFX"
+    , content = Schema.Content.ParagraphsContent
+      [ "A coach led session including drills and match play for tennis players of all levels. All are welcome to come along and try it out!"
+      , "The sessions are free for members but guests are welcome to come along for five taster sessions costing £5 each."
+      ]
+    , place = Schema.Place.Venue emberSportsClub
+    , repetition =
+        Some 
+          { frequency = (dsl.every 1).weeks.on [Schema.DayOfWeek.Thursday]
+          , stopCondition = Schema.StopRepitition.Never
+          }
+    , eventType = Some Schema.EventType.SportsEvent
+    , revisions = [] : List Schema.EventRevision
+    , signupUrl = None Text
+    , timestamp = 2024-11-14T18:30:00Z
+    , duration = Schema.Duration.Mins 150
+    , image = Some ./thursday-tennis-drills.jpg as Location
+    } : Schema.Event
+    
+  , totallyBlondie = 
     { name = "Totally Blondie"
     , id = "01J8FWH1S4TQWJGP4YGS5GZ7NH01JC9JNA2TAMWFS7ZE22GWPCAF"
     , content = Schema.Content.ParagraphsContent

@@ -18,7 +18,8 @@ in
   , id = "01J8FWH1S4TQWJGP4YGS5GZ7NH"
   , boundaries = Schema.MultiPolygon.WKT (./elmbridge-wkt.txt as Text)
   , events = 
-    [ eventsA.artAndDrawingClubForAdults
+    [ eventsA.aNightCelebratingElvisPresley
+    , eventsA.artAndDrawingClubForAdults
     , eventsC.collectAFreeTree
     , eventsE.eveningWithBrianBlessed
     , eventsP.pebbleRhymetime
@@ -26,6 +27,8 @@ in
     , eventsR.robinHoodPanto
     , eventsS.storytime
     , eventsS.sundayNightQuizAtTheBear
+    , eventsT.theBigQuizNightMarneys
+    , eventsT.thursdayTennisDrills
     , eventsT.totallyBlondie
     , eventsW.wildMurphys
     , eventsW.wreathMakingWorkshop
