@@ -14,7 +14,7 @@ in
     , postalCode = "KT10 8HL"
     , country = None Text
     } : Schema.Address
-  , image = None Prelude.Location.Type --Some ./image.jpg as Location
+  , image = Some ./ember-sports-club.jpg as Location
   , boundaries =
     [ { longitude = -0.3574385, latitude = 51.3856152 } 
     , { longitude = -0.3574305, latitude = 51.3855763 }
