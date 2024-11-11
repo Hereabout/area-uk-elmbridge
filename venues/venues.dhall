@@ -6,6 +6,7 @@ let everymanEsher = ./everyman-esher/everyman-esher.dhall
 
 let esherTheatre = ./esher-theatre/esher-theatre.dhall
 let lowerGreenCommunityCentre = ./lower-green-community-centre/lower-green-community-centre.dhall
+let marneysVillageInn = ./marneys-village-inn/marneys-village-inn.dhall
 let sanddownParkRacecourse = ./sandown-park-racecourse/sandown-park-racecourse.dhall
 let theAlbertArmsEsher = ./the-albert-arms-esher/the-albert-arms-esher.dhall
 let theBearHotelEsher = ./the-bear-hotel-esher/bear-hotel.dhall
