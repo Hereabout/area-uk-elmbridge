@@ -14,7 +14,7 @@ in
     , postalCode = "KT10 8JN"
     , country = None Text
     } : Schema.Address
-  , image = None Prelude.Location.Type --Some ./image.jpg as Location
+  , image = Some ./marneys-village-inn.jpg as Location
   , boundaries =
     [ { longitude = -0.3486295, latitude = 51.3837416 } 
     , { longitude = -0.3487046, latitude = 51.3835939 }
