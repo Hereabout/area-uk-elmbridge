@@ -18,7 +18,7 @@ in
     , eventType = Some Schema.EventType.SocialEvent
     , revisions = [] : List Schema.EventRevision
     , signupUrl = None Text
-    , timestamp = 2024-11-30T19:00:00Z
+    , timestamp = 2024-11-18T19:00:00Z
     , duration = Schema.Duration.Mins 90
     , image = Some ./the-big-quiz-night-marneys.jpg as Location
     } : Schema.Event
