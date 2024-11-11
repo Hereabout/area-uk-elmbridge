@@ -20,6 +20,7 @@ in
     , duration = Schema.Duration.Hours 3
     , image = Some ./the-rat-pack-christmas-in-vegas.jpeg as Location
     } : Schema.Event
+    
   , robinHoodPanto = 
     { name = "Robin Hood Panto"
     , id = "01J8FWH1S4TQWJGP4YGS5GZ7NH01JC8XYPX69D667F6MKN5ECWHQ"
