@@ -17,9 +17,8 @@ let theAlbertArmsEsher = ./the-albert-arms-esher/the-albert-arms-esher.dhall
 let theBarleyMowHersham = ./the-barley-mow-hersham/the-barley-mow-hersham.dhall
 let theBearHotelEsher = ./the-bear-hotel-esher/bear-hotel.dhall
 let theRoyalGeorgeHersham = ./the-royal-george-hersham/the-royal-george-hersham.dhall
-let theWatermanArms = ./the-waterman-arms-hersham/the-waterman-arms-hersham.dhall
 let theWheatsheafEsher = ./the-wheatsheaf-esher/the-wheatshear.dhall
-
+let watermansArms = ./watermans-arms-hersham/watermans-arms-hersham.dhall
 
 
 in 
@@ -42,6 +41,6 @@ in
   , theBarleyMowHersham
   , theBearHotelEsher
   , theRoyalGeorgeHersham
-  , theWatermanArms
   , theWheatsheafEsher
+  , watermansArms
   ]

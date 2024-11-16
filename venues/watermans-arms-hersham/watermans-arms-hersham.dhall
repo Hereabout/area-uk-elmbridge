@@ -2,9 +2,9 @@ let Schema = ../../types.dhall
 let Prelude = https://prelude.dhall-lang.org/v20.0.0/package.dhall
 
 in 
-  { name = "Waterman Arms"
+  { name = "Watermans Arms"
   , id = "01J8FWH1S4TQWJGP4YGS5GZ7NH001JCVJWN4JB0BNND214STQQ2S1"
-  , content = Schema.Content.ParagraphsContent [ "The Waterman Arms is a popular local pub, catering for the younger element but quiet at lunchtimes." ]
+  , content = Schema.Content.ParagraphsContent [ "The Watermans Arms is a popular local pub, catering for the younger element but quiet at lunchtimes." ]
   , address = 
     { addressLine1 = "1 Queens Road"
     , addressLine2 = Some "Hersham"
@@ -14,7 +14,7 @@ in
     , postalCode = "KT12 5LT"
     , country = None Text
     } : Schema.Address
-  , image = Some ./the-waterman-arms-hersham.jpg as Location
+  , image = Some ./watermans-arms-hersham.jpg as Location
   , boundaries =
     [ { longitude = -0.3996162861585617, latitude = 51.36595474091845 }
     , { longitude = -0.3996873646974563, latitude = 51.36584505312800 }
