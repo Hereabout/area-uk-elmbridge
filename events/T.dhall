@@ -115,7 +115,7 @@ in
           { frequency = (dsl.every 1).weeks.on [Schema.DayOfWeek.Tuesday]
           , stopCondition = Schema.StopRepitition.Never
           }
-    , eventType = Some Schema.EventType.MusicEvent
+    , eventType = Some Schema.EventType.SocialEvent
     , revisions = [] : List Schema.EventRevision
     , signupUrl = None Text
     , timestamp = 2024-11-19T19:30:00Z
