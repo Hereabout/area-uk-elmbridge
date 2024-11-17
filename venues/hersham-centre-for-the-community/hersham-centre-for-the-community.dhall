@@ -32,7 +32,7 @@ in
     , { longitude = -0.4001292586326599, latitude = 51.36637674340295 }
     , { longitude = -0.4001453518867493, latitude = 51.36633822746444 }
     , { longitude = -0.4001627862453461, latitude = 51.36633990207113 }
-    , { longitude = -0.4002459347248077, latitude = 51.36615611362083 }
+    , { longitude = -0.4002459347248078, latitude = 51.36615611362083 }
     ]
   , phoneNumber = Some "+441932246267"
   } : Schema.Venue
