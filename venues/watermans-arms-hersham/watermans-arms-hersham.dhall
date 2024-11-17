@@ -3,7 +3,7 @@ let Prelude = https://prelude.dhall-lang.org/v20.0.0/package.dhall
 
 in 
   { name = "Watermans Arms"
-  , id = "01J8FWH1S4TQWJGP4YGS5GZ7NH001JCVJWN4JB0BNND214STQQ2S1"
+  , id = "01J8FWH1S4TQWJGP4YGS5GZ7NH01JCVJWN4JB0BNND214STQQ2S1"
   , content = Schema.Content.ParagraphsContent [ "The Watermans Arms is a popular local pub, catering for the younger element but quiet at lunchtimes." ]
   , address = 
     { addressLine1 = "1 Queens Road"

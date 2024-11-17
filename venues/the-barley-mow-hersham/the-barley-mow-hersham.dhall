@@ -3,7 +3,7 @@ let Prelude = https://prelude.dhall-lang.org/v20.0.0/package.dhall
 
 in 
   { name = "The Barley Mow"
-  , id = "01J8FWH1S4TQWJGP4YGS5GZ7NH001JCVJ66HKDD90NTD8GYXR88D5"
+  , id = "01J8FWH1S4TQWJGP4YGS5GZ7NH01JCVJ66HKDD90NTD8GYXR88D5"
   , content = Schema.Content.ParagraphsContent [ "The Barley Mow is a local pub in Hersham with a focus on hospitality and community." ]
   , address = 
     { addressLine1 = "Molesey Road"

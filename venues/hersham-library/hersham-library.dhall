@@ -3,7 +3,7 @@ let Prelude = https://prelude.dhall-lang.org/v20.0.0/package.dhall
 
 in 
   { name = "Hersham Library"
-  , id = "01J8FWH1S4TQWJGP4YGS5GZ7NH001JCTKB9CPP9VZFBS8JT7FTP7Z"
+  , id = "01J8FWH1S4TQWJGP4YGS5GZ7NH01JCTKB9CPP9VZFBS8JT7FTP7Z"
   , content = Schema.Content.ParagraphsContent [ "Hersham library is a library in Hersham, just off the large roundabout between Walton and Esher." ]
   , address = 
     { addressLine1 = "Molesey Road"

@@ -3,7 +3,7 @@ let Prelude = https://prelude.dhall-lang.org/v20.0.0/package.dhall
 
 in 
   { name = "Our Lady of Lourdes"
-  , id = "01J8FWH1S4TQWJGP4YGS5GZ7NH001JCTKB9CPP9VZFBS8JT7FTP7Y"
+  , id = "01J8FWH1S4TQWJGP4YGS5GZ7NH01JCTKB9CPP9VZFBS8JT7FTP7Y"
   , content = Schema.Content.ParagraphsContent [ "Our Lady of Lourdes is a Catholic Church on Hampton Court Way with a towering crucifix and stained glass window." ]
   , address = 
     { addressLine1 = "Hampton Court Way"

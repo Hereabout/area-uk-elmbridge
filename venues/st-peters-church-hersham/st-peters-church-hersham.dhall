@@ -3,7 +3,7 @@ let Prelude = https://prelude.dhall-lang.org/v20.0.0/package.dhall
 
 in 
   { name = "St Peter's Church"
-  , id = "01J8FWH1S4TQWJGP4YGS5GZ7NH001JCVM8WZ207BS8BK6V9HXQW7C"
+  , id = "01J8FWH1S4TQWJGP4YGS5GZ7NH01JCVM8WZ207BS8BK6V9HXQW7C"
   , content = Schema.Content.ParagraphsContent [ "St Peter's is the Church of England parish church for the village of Hersham." ]
   , address = 
     { addressLine1 = "Burwood Road"

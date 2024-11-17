@@ -3,7 +3,7 @@ let Prelude = https://prelude.dhall-lang.org/v20.0.0/package.dhall
 
 in 
   { name = "Hersham Sports and Social Club"
-  , id = "01J8FWH1S4TQWJGP4YGS5GZ7NH001JCVHNAZ57748P66BVJB35ZPX"
+  , id = "01J8FWH1S4TQWJGP4YGS5GZ7NH01JCVHNAZ57748P66BVJB35ZPX"
   , content = Schema.Content.ParagraphsContent [ "Hersham Sports and Social Club is a C.I.U. Affiliated social club that was established in 1921." ]
   , address = 
     { addressLine1 = "128 Hersham Road"

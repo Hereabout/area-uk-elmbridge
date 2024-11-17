@@ -3,7 +3,7 @@ let Prelude = https://prelude.dhall-lang.org/v20.0.0/package.dhall
 
 in 
   { name = "All Saints Weston"
-  , id = "01J8FWH1S4TQWJGP4YGS5GZ7NH001JCTKB9CPP9VZFBS8JT7FTP7X"
+  , id = "01J8FWH1S4TQWJGP4YGS5GZ7NH01JCTKB9CPP9VZFBS8JT7FTP7X"
   , content = Schema.Content.ParagraphsContent [ "All Saints Weston is a Church of England church in the diocese of Guildford. It serves the community of Weston Green near Esher in Surrey." ]
   , address = 
     { addressLine1 = "Chesnut Avenue"
