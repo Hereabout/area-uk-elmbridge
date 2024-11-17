@@ -2,6 +2,7 @@ let Schema = ./types.dhall
 let Prelude = https://prelude.dhall-lang.org/v20.0.0/package.dhall
 let allVenues = ./venues/venues.dhall
 let eventsA = ./events/A.dhall
+let eventsB = ./events/B.dhall
 let eventsC = ./events/C.dhall
 let eventsE = ./events/E.dhall
 let eventsF = ./events/F.dhall
@@ -21,6 +22,8 @@ in
     [ eventsA.adviceCafe
     , eventsA.aNightCelebratingElvisPresley
     , eventsA.artAndDrawingClubForAdults
+    , eventsB.ballroomJiveRockAndRollPlusStroll
+    , eventsB.bingoHershamSportsAndSocial
     , eventsC.collectAFreeTree
     , eventsE.eveningWithBrianBlessed
     , eventsP.parishCommunionEsher
@@ -30,8 +33,11 @@ in
     , eventsS.storytime
     , eventsS.sundayNightQuizAtTheBear
     , eventsT.theBigQuizNightMarneys
+    , eventsT.theSurreyShadows
     , eventsT.thursdayTennisDrills
     , eventsT.totallyBlondie
+    , eventsT.tuesdayLiveMusicNightsHershamsSportsAndSocial
+    , eventsT.tuesdayQuizAtRoyalGeorge
     , eventsW.wildMurphys
     , eventsW.wreathMakingWorkshop
     , eventsY.youngerBabiesRhymetime
