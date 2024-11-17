@@ -27,10 +27,12 @@ in
     , eventsC.collectAFreeTree
     , eventsE.eveningWithBrianBlessed
     , eventsP.parishCommunionEsher
-    , eventsP.pebbleRhymetime
+    , eventsP.pebbleRhymetimeEsher
+    , eventsP.pebbleRhymetimeHersham
     , eventsR.ratPackChrimstasInVegas
     , eventsR.robinHoodPanto
-    , eventsS.storytime
+    , eventsS.storytimeEsher
+    , eventsS.storytimeHersham
     , eventsS.sundayNightQuizAtTheBear
     , eventsT.theBigQuizNightMarneys
     , eventsT.theSurreyShadows
