@@ -31,7 +31,7 @@ in
   , everymanEsher
   , hershamCentreForTheCommunity
   , hershamLibrary
-  , hershamCentreForTheCommunity
+  , hershamSportsAndSocialClub
   , lowerGreenCommunityCentre
   , marneysVillageInn
   , ourLadyOfLourdesCatholicChurch
