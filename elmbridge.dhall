@@ -55,8 +55,8 @@ in
       }
     , { name = "Ashley Park"
       , id = "01J8FWH1S4TQWJGP4YGS5GZ7NH01J8FWH1S4TQWJGP4YGS5GZ7P2"
-      , content = Schema.Content.ParagraphsContent [""]
-      , centre = { latitude = 51.377753, longitude = -0.413692 }
+      , content = Schema.Content.ParagraphsContent [ "Ashley Park is a private residential neighbourhood in Walton-on-Thames in Surrey." ]
+      , centre = { latitude = 51.376631, longitude = -0.420541 }
       , image = None Prelude.Location.Type
       }
     , { name = "Brooklands"
@@ -79,9 +79,9 @@ in
       }
     , { name = "Claygate"
       , id = "01J8FWH1S4TQWJGP4YGS5GZ7NH01J8FWH1S4TQWJGP4YGS5GZ7P6"
-      , content = Schema.Content.ParagraphsContent [""]
+      , content = Schema.Content.ParagraphsContent [ "Claygate is a village in Surrey with strong community spirit, independent shops, and excellent transport links." ]
       , centre = { latitude = 51.356964, longitude = -0.34116 }
-      , image = None Prelude.Location.Type
+      , image = Some ./claygate.jpg as Location
       }
     , { name = "The Clump"
       , id = "01J8FWH1S4TQWJGP4YGS5GZ7NH01J8FWH1S4TQWJGP4YGS5GZ7P7"
@@ -121,10 +121,10 @@ in
       }
     , { name = "Esher"
       , id = "01J8FWH1S4TQWJGP4YGS5GZ7NH01J8FWH1S4TQWJGP4YGS5GZ7PD"
-      , content = Schema.Content.ParagraphsContent ["Esher is a town in the borough of Elmbridge in Surrey, England, to the east of the River Mole."]
+      , content = Schema.Content.ParagraphsContent [ "Esher is a town in the borough of Elmbridge in Surrey, England, to the east of the River Mole." ]
       , centre = { latitude = 51.370219, longitude = -0.365400 }
       --, centre = { latitude = 51.366845, longitude = -0.372408 }
-      , image = None Prelude.Location.Type
+      , image = Some ./esher.jpg as Location
       }
     , { name = "Fairmile"
       , id = "01J8FWH1S4TQWJGP4YGS5GZ7NH01J8FWH1S4TQWJGP4YGS5GZ7PE"
@@ -152,15 +152,15 @@ in
       }
     , { name = "Hersham"
       , id = "01J8FWH1S4TQWJGP4YGS5GZ7NH01J8FWH1S4TQWJGP4YGS5GZ7PK"
-      , content = Schema.Content.ParagraphsContent [""]
+      , content = Schema.Content.ParagraphsContent [ "Hersham is a village in Surrey centred on Hersham Green upon which events take place throughout the year." ]
       , centre = { latitude = 51.364505, longitude = -0.398348 }
-      , image = None Prelude.Location.Type
+      , image = Some ./hersham.jpg as Location
       }
     , { name = "Hinchley Wood"
       , id = "01J8FWH1S4TQWJGP4YGS5GZ7NH01J8FWH1S4TQWJGP4YGS5GZ7PM"
-      , content = Schema.Content.ParagraphsContent [""]
+      , content = Schema.Content.ParagraphsContent [ "Hinchley Wood is a suburb in the borough of Elmbridge, centred around its station on the New Guildford Line." ]
       , centre = { latitude = 51.37718, longitude = -0.339854 }
-      , image = None Prelude.Location.Type
+      , image = Some ./hinchley-wood.jpg as Location
       }
     , { name = "Hurst Park"
       , id = "01J8FWH1S4TQWJGP4YGS5GZ7NH01J8FWH1S4TQWJGP4YGS5GZ7PN"
@@ -170,7 +170,7 @@ in
       }
     , { name = "Lower Green"
       , id = "01J8FWH1S4TQWJGP4YGS5GZ7NH01J8FWH1S4TQWJGP4YGS5GZ7PP"
-      , content = Schema.Content.ParagraphsContent [""]
+      , content = Schema.Content.ParagraphsContent [ "Lower Green is a residential and commercial area within Esher, sitting on the banks of the River Ember and the River Mole." ]
       , centre = { latitude = 51.376672, longitude = -0.367748 }
       , image = None Prelude.Location.Type
       }
@@ -231,7 +231,7 @@ in
     , { name = "Walton-on-Thames"
       , id = "01J8FWH1S4TQWJGP4YGS5GZ7NH01J8FWH1S4TQWJGP4YGS5GZ7Q0"
       , content = Schema.Content.ParagraphsContent [""]
-      , centre = { latitude = 51.377734, longitude = -0.412255 }
+      , centre = { latitude = 51.387324, longitude = -0.418126 }
       , image = None Prelude.Location.Type
       }
     , { name = "West End"
@@ -242,9 +242,9 @@ in
       }
     , { name = "Weston Green"
       , id = "01J8FWH1S4TQWJGP4YGS5GZ7NH01J8FWH1S4TQWJGP4YGS5GZ7Q2"
-      , content = Schema.Content.ParagraphsContent [""]
+      , content = Schema.Content.ParagraphsContent [ "Weston Green is a suburban village in Surrey, known for its historic village green, period cottages, local amenities, and close proximity to Esher and Thames Ditton." ]
       , centre = { latitude = 51.384388, longitude = -0.340887 }
-      , image = None Prelude.Location.Type
+      , image = Some ./weston-green.jpg as Location
       }
     , { name = "Weybridge"
       , id = "01J8FWH1S4TQWJGP4YGS5GZ7NH01J8FWH1S4TQWJGP4YGS5GZ7Q3"
