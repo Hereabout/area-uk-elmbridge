@@ -1,4 +1,5 @@
 let allSaintsWeston = ./all-saints-weston/all-saints-weston.dhall
+let bricklayersArmsHersham = ./bricklayers-arms-hersham/bricklayers-arms-hersham.dhall
 let christChurchEsher = ./christ-church-esher/christ-church-esher.dhall
 let emberSportsClub = ./ember-sports-club/ember-sports-club.dhall
 let esherLibrary = ./esher-library/esher-library.dhall
@@ -23,6 +24,7 @@ let watermansArms = ./watermans-arms-hersham/watermans-arms-hersham.dhall
 
 in 
   [ allSaintsWeston
+  , bricklayersArmsHersham
   , christChurchEsher
   , emberSportsClub
   , esherLibrary
