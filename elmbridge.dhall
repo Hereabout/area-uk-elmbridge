@@ -25,17 +25,20 @@ in
     , eventsB.ballroomJiveRockAndRollPlusStroll
     , eventsB.bingoHershamSportsAndSocial
     , eventsC.collectAFreeTree
+    , eventsC.countryMusicLiveHershamSportsAndSocial
     , eventsE.eveningWithBrianBlessed
     , eventsP.parishCommunionEsher
     , eventsP.pebbleRhymetimeEsher
     , eventsP.pebbleRhymetimeHersham
     , eventsR.ratPackChrimstasInVegas
     , eventsR.robinHoodPanto
+    , eventsR.rockNRollHershamSportsAndSocial
     , eventsS.storytimeEsher
     , eventsS.storytimeHersham
     , eventsS.sundayNightQuizAtTheBear
+    , eventsS.surreyBluesClubHershamSportsAndSocial
+    , eventsS.surreyShadowsHershamSportsAndSocial
     , eventsT.theBigQuizNightMarneys
-    , eventsT.theSurreyShadows
     , eventsT.thursdayTennisDrills
     , eventsT.totallyBlondie
     , eventsT.tuesdayLiveMusicNightsHershamsSportsAndSocial
