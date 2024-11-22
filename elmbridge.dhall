@@ -27,6 +27,7 @@ in
     , eventsC.collectAFreeTree
     , eventsC.countryMusicLiveHershamSportsAndSocial
     , eventsE.eveningWithBrianBlessed
+    , eventsF.funSaintsPlayGroupWeston
     , eventsP.parishCommunionEsher
     , eventsP.pebbleRhymetimeEsher
     , eventsP.pebbleRhymetimeHersham
