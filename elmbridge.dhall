@@ -1,53 +1,13 @@
 let Schema = ./types.dhall
 let Prelude = https://prelude.dhall-lang.org/v20.0.0/package.dhall
 let allVenues = ./venues/venues.dhall
-let eventsA = ./events/A.dhall
-let eventsB = ./events/B.dhall
-let eventsC = ./events/C.dhall
-let eventsE = ./events/E.dhall
-let eventsF = ./events/F.dhall
-let eventsP = ./events/P.dhall
-let eventsR = ./events/R.dhall
-let eventsS = ./events/S.dhall
-let eventsT = ./events/T.dhall
-let eventsW = ./events/W.dhall
-let eventsY = ./events/Y.dhall
-
+let events = ./events/events.dhall
 
 in 
   { name = "Elmbridge"
   , id = "01J8FWH1S4TQWJGP4YGS5GZ7NH"
   , boundaries = Schema.MultiPolygon.WKT (./elmbridge-wkt.txt as Text)
-  , events = 
-    [ eventsA.adviceCafe
-    , eventsA.aNightCelebratingElvisPresley
-    , eventsA.artAndDrawingClubForAdults
-    , eventsB.ballroomJiveRockAndRollPlusStroll
-    , eventsB.bingoHershamSportsAndSocial
-    , eventsC.collectAFreeTree
-    , eventsC.countryMusicLiveHershamSportsAndSocial
-    , eventsE.eveningWithBrianBlessed
-    , eventsF.funSaintsPlayGroupWeston
-    , eventsP.parishCommunionEsher
-    , eventsP.pebbleRhymetimeEsher
-    , eventsP.pebbleRhymetimeHersham
-    , eventsR.ratPackChrimstasInVegas
-    , eventsR.robinHoodPanto
-    , eventsR.rockNRollHershamSportsAndSocial
-    , eventsS.storytimeEsher
-    , eventsS.storytimeHersham
-    , eventsS.sundayNightQuizAtTheBear
-    , eventsS.surreyBluesClubHershamSportsAndSocial
-    , eventsS.surreyShadowsHershamSportsAndSocial
-    , eventsT.theBigQuizNightMarneys
-    , eventsT.thursdayTennisDrills
-    , eventsT.totallyBlondie
-    , eventsT.tuesdayLiveMusicNightsHershamsSportsAndSocial
-    , eventsT.tuesdayQuizAtRoyalGeorge
-    , eventsW.wildMurphys
-    , eventsW.wreathMakingWorkshop
-    , eventsY.youngerBabiesRhymetime
-    ] : List Schema.Event
+  , events = events : List Schema.Event
   , venues = allVenues : List Schema.Venue
   , tzLabel = Schema.TZLabel.Europe/London
   , communities = 
