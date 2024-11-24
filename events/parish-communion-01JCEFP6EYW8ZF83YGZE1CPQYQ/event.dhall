@@ -22,5 +22,5 @@ in
   , signupUrl = None Text
   , timestamp = 2024-11-17T10:30:00Z
   , duration = Schema.Duration.Mins 70
-  , image = Some ./anglican-service.webp as Location
+  , image = Some ./image.webp as Location
   } : Schema.Event
