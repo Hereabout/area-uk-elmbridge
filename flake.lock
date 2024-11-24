@@ -63,11 +63,11 @@
         "nixpkgs": "nixpkgs_2"
       },
       "locked": {
-        "lastModified": 1732101649,
-        "narHash": "sha256-AHGwzcBCU3SCOV8jEWEFVxDf4TPNNmTvCEa5aBgK/Fg=",
+        "lastModified": 1732409217,
+        "narHash": "sha256-mWlQemGffSJzkabmWoZTIx8AXWyVnq8fXwuAPV8aqs8=",
         "owner": "Hereabout",
         "repo": "hereabout-mono",
-        "rev": "b8a44881ecb79c5d2a07d6d61ee608d287a56889",
+        "rev": "0221d959b66a9f16adf4f84c580eacb35bc92234",
         "type": "github"
       },
       "original": {
