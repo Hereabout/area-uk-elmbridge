@@ -1,7 +1,7 @@
 let Schema = ../../types.dhall
 
 let Prelude = https://prelude.dhall-lang.org/v20.0.0/package.dhall
-let marneysVillageInn = ../../venues/marneys-village-inn/marneys-village-inn.dhall
+let marneysVillageInn = ../../venues/marneys-village-inn-01JC797Q97QK2C8FWTGNCN0K44/venue.dhall
 
 let dsl = ../../dsl.dhall
 

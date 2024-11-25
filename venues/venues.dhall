@@ -1,50 +1,24 @@
-let allSaintsHersham = ./all-saints-catholic-church-hersham/all-saints-catholic-church-hersham.dhall
-let allSaintsWeston = ./all-saints-weston/all-saints-weston.dhall
-let bricklayersArmsHersham = ./bricklayers-arms-hersham/bricklayers-arms-hersham.dhall
-let christChurchEsher = ./christ-church-esher/christ-church-esher.dhall
-let emberSportsClub = ./ember-sports-club/ember-sports-club.dhall
-let esherLibrary = ./esher-library/esher-library.dhall
-let esherRugbyClub = ./esher-rugby-club/esher-rugby-club.dhall
-let esherTheatre = ./esher-theatre/esher-theatre.dhall
-let everymanEsher = ./everyman-esher/everyman-esher.dhall
-let hershamCentreForTheCommunity = ./hersham-centre-for-the-community/hersham-centre-for-the-community.dhall
-let hershamLibrary = ./hersham-library/hersham-library.dhall
-let hershamSportsAndSocialClub = ./hersham-sports-and-social-club/hersham-sports-and-social-club.dhall
-let lowerGreenCommunityCentre = ./lower-green-community-centre/lower-green-community-centre.dhall
-let marneysVillageInn = ./marneys-village-inn/marneys-village-inn.dhall
-let ourLadyOfLourdesCatholicChurch = ./our-lady-of-lourdes-catholic-church/our-lady-of-lourdes-catholic-church.dhall
-let sanddownParkRacecourse = ./sandown-park-racecourse/sandown-park-racecourse.dhall
-let stPetersChurchHersham = ./st-peters-church-hersham/st-peters-church-hersham.dhall
-let theAlbertArmsEsher = ./the-albert-arms-esher/the-albert-arms-esher.dhall
-let theBarleyMowHersham = ./the-barley-mow-hersham/the-barley-mow-hersham.dhall
-let theBearHotelEsher = ./the-bear-hotel-esher/bear-hotel.dhall
-let theRoyalGeorgeHersham = ./the-royal-george-hersham/the-royal-george-hersham.dhall
-let theWheatsheafEsher = ./the-wheatsheaf-esher/the-wheatshear.dhall
-let watermansArms = ./watermans-arms-hersham/watermans-arms-hersham.dhall
-
-
-in 
-  [ allSaintsHersham
-  , allSaintsWeston
-  , bricklayersArmsHersham
-  , christChurchEsher
-  , emberSportsClub
-  , esherLibrary
-  , esherRugbyClub
-  , esherTheatre
-  , everymanEsher
-  , hershamCentreForTheCommunity
-  , hershamLibrary
-  , hershamSportsAndSocialClub
-  , lowerGreenCommunityCentre
-  , marneysVillageInn
-  , ourLadyOfLourdesCatholicChurch
-  , sanddownParkRacecourse
-  , stPetersChurchHersham
-  , theAlbertArmsEsher
-  , theBarleyMowHersham
-  , theBearHotelEsher
-  , theRoyalGeorgeHersham
-  , theWheatsheafEsher
-  , watermansArms
-  ]
+[ ./all-saints-catholic-church-01JD25PGCCFVTAAZZCP51W17BP/venue.dhall
+, ./all-saints-weston-01JCTKB9CPP9VZFBS8JT7FTP7X/venue.dhall
+, ./bricklayers-arms-01JD252HGW97ZG3P2T908ZSYC6/venue.dhall
+, ./christ-church-01JC1WASN8N2287EAW7BBRZNTR/venue.dhall
+, ./ember-sports-club-01JC7A12E92S9TWYPA3AM4FPMD/venue.dhall
+, ./esher-library-01J8FWH1S4TQWJGP4YGS5GZ7Z0/venue.dhall
+, ./esher-rugby-club-01JB5D4KVJRJ08ESBR27FR1AZ7/venue.dhall
+, ./esher-theatre-01J8FWH1S4TQWJGP4YGS5GZ7Z2/venue.dhall
+, ./everyman-esher-01JC1WASN8N2287EAW7BBRZNTS/venue.dhall
+, ./hersham-centre-for-the-community-01JCVMPBKT7KMFQE4CVNZWQ5S4/venue.dhall
+, ./hersham-library-01JCTKB9CPP9VZFBS8JT7FTP7Z/venue.dhall
+, ./hersham-sports-and-social-club-01JCVHNAZ57748P66BVJB35ZPX/venue.dhall
+, ./lower-green-community-centre-01JB0HG5207EQP4JJ1TARKW4MF/venue.dhall
+, ./marneys-village-inn-01JC797Q97QK2C8FWTGNCN0K44/venue.dhall
+, ./our-lady-of-lourdes-01JCTKB9CPP9VZFBS8JT7FTP7Y/venue.dhall
+, ./sandown-park-racecourse-01JB31Z4Z7FVVFXE5K9SBHC4XF/venue.dhall
+, ./st-peters-church-01JCVM8WZ207BS8BK6V9HXQW7C/venue.dhall
+, ./the-albert-arms-01JC1WASN8N2287EAW7BBRZNTQ/venue.dhall
+, ./the-barley-mow-01JCVJ66HKDD90NTD8GYXR88D5/venue.dhall
+, ./the-bear-hotel-01J8FWH1S4TQWJGP4YGS5GZ7Z1/venue.dhall
+, ./the-royal-george-01JCVAZ89PJ15EJ2S1DRJSTZ1V/venue.dhall
+, ./the-wheatsheaf-01J8FWH1S4TQWJGP4YGS5GZ7Z3/venue.dhall
+, ./watermans-arms-01JCVJWN4JB0BNND214STQQ2S1/venue.dhall
+]
