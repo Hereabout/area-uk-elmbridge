@@ -1,7 +1,7 @@
 let Schema = ../../types.dhall
 
 let Prelude = https://prelude.dhall-lang.org/v20.0.0/package.dhall
-let theBearHotelEsher = ../../venues/the-bear-hotel-esher/bear-hotel.dhall
+let theBearHotelEsher = ../../venues/the-bear-hotel-01J8FWH1S4TQWJGP4YGS5GZ7Z1/venue.dhall
 let dsl = ../../dsl.dhall
 
 in 

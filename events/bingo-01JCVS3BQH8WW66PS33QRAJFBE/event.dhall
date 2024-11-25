@@ -1,7 +1,7 @@
 let Schema = ../../types.dhall
 
 let Prelude = https://prelude.dhall-lang.org/v20.0.0/package.dhall
-let hershamSportsAndSocialClub = ../../venues/hersham-sports-and-social-club/hersham-sports-and-social-club.dhall
+let hershamSportsAndSocialClub = ../../venues/hersham-sports-and-social-club-01JCVHNAZ57748P66BVJB35ZPX/venue.dhall
 let dsl = ../../dsl.dhall
 
 in 

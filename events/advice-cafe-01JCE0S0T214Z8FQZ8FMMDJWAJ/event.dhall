@@ -1,7 +1,7 @@
 let Schema = ../../types.dhall
 
 let Prelude = https://prelude.dhall-lang.org/v20.0.0/package.dhall
-let lowerGreenCommunityCentre = ../../venues/lower-green-community-centre/lower-green-community-centre.dhall
+let lowerGreenCommunityCentre = ../../venues/lower-green-community-centre-01JB0HG5207EQP4JJ1TARKW4MF/venue.dhall
 let dsl = ../../dsl.dhall
 
 in 
