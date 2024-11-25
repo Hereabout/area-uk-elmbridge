@@ -7,7 +7,7 @@ let dsl = ../../dsl.dhall
 
 in 
   { name = "Watercolour Workshop for Adults"
-  , id = "01J8FWH1S4TQWJGP4YGS5GZ7NH01JCVRPRBF9CGV1PZS60AYX6G7"
+  , id = "01J8FWH1S4TQWJGP4YGS5GZ7NH01JDJMFH48F31RKZGJR2C540HC"
   , content = Schema.Content.MarkdownContent ./event.md as Text
   , place = Schema.Place.Venue bluehouseArtSpace
   , repetition = 
