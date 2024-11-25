@@ -22,6 +22,7 @@
 , ./totally-blondie-01JC9JNA2TAMWFS7ZE22GWPCAF/event.dhall
 , ./tuesday-live-music-nights-01JCVRPRBF9CGV1PZS60AYX6G6/event.dhall
 , ./tuesday-quiz-01JCVRPRBF9CGV1PZS60AYX6G7/event.dhall
+, ./watercolour-workshop-for-adults-01JDJMFH48F31RKZGJR2C540HC/event.dhall
 , ./wreath-making-workshop-01JC0XYWX6WN43GKVRS6WM8YBK/event.dhall
 , ./younger-babies-rhymetime-01JBYNRJZX5XBTCR06R9ZDMEV5/event.dhall
 ]

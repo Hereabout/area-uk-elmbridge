@@ -1,5 +1,6 @@
 [ ./all-saints-catholic-church-01JD25PGCCFVTAAZZCP51W17BP/venue.dhall
 , ./all-saints-weston-01JCTKB9CPP9VZFBS8JT7FTP7X/venue.dhall
+, ./bluehouse-artspace-01JDJKNBH6AC7CXSJ46DHDWET2/venue.dhall
 , ./bricklayers-arms-01JD252HGW97ZG3P2T908ZSYC6/venue.dhall
 , ./christ-church-01JC1WASN8N2287EAW7BBRZNTR/venue.dhall
 , ./ember-sports-club-01JC7A12E92S9TWYPA3AM4FPMD/venue.dhall
