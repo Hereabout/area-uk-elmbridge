@@ -1,31 +1,31 @@
 let Prelude = https://prelude.dhall-lang.org/v20.0.0/package.dhall
 let Schema = ./types.dhall
 
-let periodityToRepetitionPattern = \(sp : Schema.Periodicity) ->
+let periodicityToRepetitionPattern = \(sp : Schema.Periodicity) ->
   { stops =
     { never =
         { frequency = sp
-        , stopCondition = Schema.StopRepitition.Never
+        , stopCondition = Schema.StopRepetition.Never
         }
     , on = \(date : Date) -> 
         { frequency = sp
-        , stopCondition = Schema.StopRepitition.StopOn date
+        , stopCondition = Schema.StopRepetition.StopOn date
         }
     , after = \(n : Natural) ->
         { frequency = sp
-        , stopCondition = Schema.StopRepitition.StopAfter n
+        , stopCondition = Schema.StopRepetition.StopAfter n
         }
     }
   }
 
 let every = \(n : Natural) ->
   { days = 
-    periodityToRepetitionPattern 
+    periodicityToRepetitionPattern 
       (Schema.Periodicity.Daily n
       )
   , weeks =
     { on = \(days : List Schema.DayOfWeek) ->
-      periodityToRepetitionPattern 
+      periodicityToRepetitionPattern 
         ( Schema.Periodicity.Weekly 
           ( { n = n
             , daysOfTheWeek = days
@@ -35,9 +35,9 @@ let every = \(n : Natural) ->
     }
   , months = 
     { onCalendarDays = \(days : List Natural) ->
-      periodityToRepetitionPattern
+      periodicityToRepetitionPattern
         ( Schema.Periodicity.MonthlyOn
-          ( Schema.MonthlyPeridiocity.OnDays 
+          ( Schema.MonthlyPeriodicity.OnDays 
             { nMonthly = n
             , daysOfTheMonth = days
             }
@@ -47,9 +47,9 @@ let every = \(n : Natural) ->
       { first =
         { week = 
           { on = \(days : List Schema.DayOfWeek) ->
-            periodityToRepetitionPattern
+            periodicityToRepetitionPattern
               ( Schema.Periodicity.MonthlyOn 
-                ( Schema.MonthlyPeridiocity.OnFirst 
+                ( Schema.MonthlyPeriodicity.OnFirst 
                   { nMonthly = n
                   , occurrence = 1
                   , daysOfTheWeek = days 
@@ -61,9 +61,9 @@ let every = \(n : Natural) ->
       , second =
         { week = 
           { on = \(days : List Schema.DayOfWeek) ->
-            periodityToRepetitionPattern
+            periodicityToRepetitionPattern
               ( Schema.Periodicity.MonthlyOn 
-                ( Schema.MonthlyPeridiocity.OnFirst 
+                ( Schema.MonthlyPeriodicity.OnFirst 
                   { nMonthly = n
                   , occurrence = 2
                   , daysOfTheWeek = days 
@@ -75,9 +75,9 @@ let every = \(n : Natural) ->
       , third =
         { week = 
           { on = \(days : List Schema.DayOfWeek) ->
-            periodityToRepetitionPattern
+            periodicityToRepetitionPattern
               ( Schema.Periodicity.MonthlyOn 
-                ( Schema.MonthlyPeridiocity.OnFirst 
+                ( Schema.MonthlyPeriodicity.OnFirst 
                   { nMonthly = n
                   , occurrence = 3
                   , daysOfTheWeek = days 
@@ -89,9 +89,9 @@ let every = \(n : Natural) ->
       , fourth =
         { week = 
           { on = \(days : List Schema.DayOfWeek) ->
-            periodityToRepetitionPattern
+            periodicityToRepetitionPattern
               ( Schema.Periodicity.MonthlyOn 
-                ( Schema.MonthlyPeridiocity.OnFirst 
+                ( Schema.MonthlyPeriodicity.OnFirst 
                   { nMonthly = n
                   , occurrence = 4
                   , daysOfTheWeek = days 
@@ -103,24 +103,23 @@ let every = \(n : Natural) ->
       , secondToLast =
         { week = 
           { on = \(days : List Schema.DayOfWeek) ->
-            periodityToRepetitionPattern
+            periodicityToRepetitionPattern
               ( Schema.Periodicity.MonthlyOn 
-                ( Schema.MonthlyPeridiocity.OnLast 
+                ( Schema.MonthlyPeriodicity.OnLast 
                   { nMonthly = n
                   , occurrence = 2
                   , daysOfTheWeek = days 
                   }
                 ) 
               )
-
           }
         }
       , last =
         { week = 
           { on = \(days : List Schema.DayOfWeek) ->
-            periodityToRepetitionPattern
+            periodicityToRepetitionPattern
               ( Schema.Periodicity.MonthlyOn 
-                ( Schema.MonthlyPeridiocity.OnLast 
+                ( Schema.MonthlyPeriodicity.OnLast 
                   { nMonthly = n
                   , occurrence = 1
                   , daysOfTheWeek = days 
