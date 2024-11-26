@@ -10,11 +10,7 @@ in
   , id = "01J8FWH1S4TQWJGP4YGS5GZ7NH01JDJMFH48F31RKZGJR2C540HC"
   , content = Schema.Content.MarkdownContent ./event.md as Text
   , place = Schema.Place.Venue bluehouseArtSpace
-  , repetition = 
-      Some 
-        { frequency = (dsl.every 1).weeks.on [Schema.DayOfWeek.Tuesday]
-        , stopCondition = Schema.StopRepitition.StopOn 2024-12-10
-        }
+  , repetition = Some (((dsl.every 1).weeks.on [Schema.DayOfWeek.Tuesday]).stops.on 2024-12-10)
   , eventType = Some Schema.EventType.VisualArtsEvent
   , revisions = [] : List Schema.EventRevision
   , signupUrl = Some "https://parulofthesea.com/collections/workshops/products/watercolour-workshop-for-adults-tuesday-afternoons"

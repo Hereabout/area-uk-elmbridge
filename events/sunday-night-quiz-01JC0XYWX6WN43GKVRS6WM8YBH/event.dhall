@@ -13,11 +13,7 @@ in
     , "A great way to round off the weekend and beat those Sunday Night blues. Can't wait to see you all there!"
     ]
   , place = Schema.Place.Venue theBearHotelEsher
-  , repetition = 
-      Some 
-        { frequency = (dsl.every 1).weeks.on [Schema.DayOfWeek.Sunday]
-        , stopCondition = Schema.StopRepitition.Never
-        }
+  , repetition = Some ((dsl.every 1).weeks.on [Schema.DayOfWeek.Sunday]).stops.never
   , eventType = Some Schema.EventType.SocialEvent
   , revisions = [] : List Schema.EventRevision
   , signupUrl = None Text

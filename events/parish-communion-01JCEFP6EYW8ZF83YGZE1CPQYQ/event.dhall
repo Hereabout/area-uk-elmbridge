@@ -12,11 +12,7 @@ in
     , "On the other Sundays of the month, the service lasts for 70 minutes. There are four, usually traditional, hymns led by a choir. Children and young people are welcome and will go off to their teaching groups after the gathering prayer and return for communion."
     ]
   , place = Schema.Place.Venue christChurchEsher
-  , repetition = 
-      Some 
-        { frequency = (dsl.every 1).weeks.on [ Schema.DayOfWeek.Sunday ]
-        , stopCondition = Schema.StopRepitition.Never
-        }
+  , repetition = Some ((dsl.every 1).weeks.on [ Schema.DayOfWeek.Sunday ]).stops.never
   , eventType = Some Schema.EventType.ReligiousEvent
   , revisions = [] : List Schema.EventRevision
   , signupUrl = None Text
