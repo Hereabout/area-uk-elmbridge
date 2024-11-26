@@ -12,11 +12,7 @@ in
     , "There is a charge of £2.00 per child."
     ]
   , place = Schema.Place.Venue allSaintsWeston
-  , repetition = 
-    Some 
-      { frequency = (dsl.every 1).weeks.on [ Schema.DayOfWeek.Monday ]
-      , stopCondition = Schema.StopRepitition.Never
-      }
+  , repetition = Some ((dsl.every 1).weeks.on [ Schema.DayOfWeek.Monday ]).stops.never
   , eventType = Some Schema.EventType.ChildrensEvent
   , revisions = [] : List Schema.EventRevision
   , signupUrl = None Text

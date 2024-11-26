@@ -13,11 +13,7 @@ in
     , "Sessions are free and generally last 30 minutes."
     ]
   , place = Schema.Place.Venue esherLibrary
-  , repetition = 
-      Some 
-        { frequency = (dsl.every 1).weeks.on [Schema.DayOfWeek.Tuesday]
-        , stopCondition = Schema.StopRepitition.Never
-        }
+  , repetition = Some ((dsl.every 1).weeks.on [Schema.DayOfWeek.Tuesday]).stops.never
   , eventType = Some Schema.EventType.ChildrensEvent
   , revisions = [] : List Schema.EventRevision
   , signupUrl = None Text

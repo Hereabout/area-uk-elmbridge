@@ -12,11 +12,7 @@ in
     , "7pm - 8pm - Strolling. 8:15pm - 10:30pm - Jive and Rock and Roll!"
     ]
   , place = Schema.Place.Venue hershamSportsAndSocialClub
-  , repetition = 
-    Some 
-      { frequency = (dsl.every 1).weeks.on [Schema.DayOfWeek.Wednesday]
-      , stopCondition = Schema.StopRepitition.Never
-      }
+  , repetition = Some ((dsl.every 1).weeks.on [Schema.DayOfWeek.Wednesday]).stops.never
   , eventType = Some Schema.EventType.SocialEvent
   , revisions = [] : List Schema.EventRevision
   , signupUrl = None Text

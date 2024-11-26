@@ -11,11 +11,7 @@ in
     [ "Pop along for an evening of country music played live every month."
     ]
   , place = Schema.Place.Venue hershamSportsAndSocialClub
-  , repetition = 
-    Some 
-      { frequency = (dsl.every 1).months.on.second.week.on [ Schema.DayOfWeek.Friday ]
-      , stopCondition = Schema.StopRepitition.Never
-      }
+  , repetition = Some ((dsl.every 1).months.on.second.week.on [ Schema.DayOfWeek.Friday ]).stops.never
   , eventType = Some Schema.EventType.SocialEvent
   , revisions = [] : List Schema.EventRevision
   , signupUrl = None Text

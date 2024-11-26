@@ -13,11 +13,7 @@ in
       , "No booking is needed, just come along!"
       ]
     , place = Schema.Place.Venue esherLibrary
-    , repetition = 
-        Some 
-          { frequency = (dsl.every 1).weeks.on [Schema.DayOfWeek.Saturday]
-          , stopCondition = Schema.StopRepitition.Never
-          }
+    , repetition = Some ((dsl.every 1).weeks.on [Schema.DayOfWeek.Saturday]).stops.never
     , eventType = Some Schema.EventType.ChildrensEvent
     , revisions = [] : List Schema.EventRevision
     , signupUrl = None Text

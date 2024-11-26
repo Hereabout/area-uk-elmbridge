@@ -12,11 +12,7 @@ in
     [ "The Surrey Blues Club provides an opportunity for both listeners and players to enjoy classic blues every month."
     ]
   , place = Schema.Place.Venue hershamSportsAndSocialClub
-  , repetition = 
-      Some 
-        { frequency = (dsl.every 1).months.on.first.week.on [Schema.DayOfWeek.Friday]
-        , stopCondition = Schema.StopRepitition.Never
-        }
+  , repetition = Some ((dsl.every 1).months.on.first.week.on [Schema.DayOfWeek.Friday]).stops.never
   , eventType = Some Schema.EventType.MusicEvent
   , revisions = [] : List Schema.EventRevision
   , signupUrl = None Text

@@ -12,11 +12,7 @@ in
     [ "The Surrey Shadows Club welcomes everyone to their musical evenings, whether you sing, play guitar, bass, keyboards or drums. We are extremely pleased to have Breakthru' continue as our Backing Band for the Surrey Shadows Club."
     ]
   , place = Schema.Place.Venue hershamSportsAndSocialClub
-  , repetition = 
-      Some 
-        { frequency = (dsl.every 1).months.on.third.week.on [Schema.DayOfWeek.Friday]
-        , stopCondition = Schema.StopRepitition.Never
-        }
+  , repetition = Some ((dsl.every 1).months.on.third.week.on [Schema.DayOfWeek.Friday]).stops.never
   , eventType = Some Schema.EventType.MusicEvent
   , revisions = [] : List Schema.EventRevision
   , signupUrl = None Text

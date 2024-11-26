@@ -13,11 +13,7 @@ in
     , "Rhymetimes are free and are a great opportunity for dads, mums, carers and children to make new friends in a relaxed setting."
     ]
   , place = Schema.Place.Venue esherLibrary
-  , repetition = 
-      Some 
-        { frequency = (dsl.every 1).weeks.on [Schema.DayOfWeek.Thursday, Schema.DayOfWeek.Saturday]
-        , stopCondition = Schema.StopRepitition.Never
-        }
+  , repetition = Some ((dsl.every 1).weeks.on [Schema.DayOfWeek.Thursday, Schema.DayOfWeek.Saturday]).stops.never
   , eventType = Some Schema.EventType.ChildrensEvent
   , revisions = [] : List Schema.EventRevision
   , signupUrl = None Text

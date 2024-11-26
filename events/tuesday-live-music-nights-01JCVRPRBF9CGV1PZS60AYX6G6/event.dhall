@@ -12,11 +12,7 @@ in
     [ "A live music night featuring solo acts, duos, trios and full bands and varied music genres."
     ]
   , place = Schema.Place.Venue hershamSportsAndSocialClub
-  , repetition = 
-      Some 
-        { frequency = (dsl.every 1).weeks.on [Schema.DayOfWeek.Tuesday]
-        , stopCondition = Schema.StopRepitition.Never
-        }
+  , repetition = Some ((dsl.every 1).weeks.on [Schema.DayOfWeek.Tuesday]).stops.never
   , eventType = Some Schema.EventType.MusicEvent
   , revisions = [] : List Schema.EventRevision
   , signupUrl = None Text

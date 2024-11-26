@@ -13,11 +13,7 @@ in
     , "Light refreshments will be available."
     ]
   , place = Schema.Place.Venue esherLibrary
-  , repetition =
-      Some 
-        { frequency = (dsl.every 1).weeks.on [Schema.DayOfWeek.Wednesday]
-        , stopCondition = Schema.StopRepitition.Never
-        }
+  , repetition = Some ((dsl.every 1).weeks.on [Schema.DayOfWeek.Wednesday]).stops.never
   , eventType = Some Schema.EventType.VisualArtsEvent
   , revisions = [] : List Schema.EventRevision
   , signupUrl = None Text
