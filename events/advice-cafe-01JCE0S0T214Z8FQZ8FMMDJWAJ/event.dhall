@@ -11,11 +11,7 @@ in
     [ "A drop-in session with friendly advisors who can provide help and support when needed. Free energy advice and emergency food support available. ."
     ]
   , place = Schema.Place.Venue lowerGreenCommunityCentre
-  , repetition =
-      Some 
-        { frequency = (dsl.every 1).weeks.on [Schema.DayOfWeek.Wednesday]
-        , stopCondition = Schema.StopRepitition.Never
-        }
+  , repetition = Some ((dsl.every 1).weeks.on [Schema.DayOfWeek.Wednesday]).stops.never
   , eventType = None Schema.EventType
   , revisions = [] : List Schema.EventRevision
   , signupUrl = None Text

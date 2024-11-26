@@ -11,11 +11,7 @@ in
     [ "A hugely popular bingo night with bingo lovers new and old."
     ]
   , place = Schema.Place.Venue hershamSportsAndSocialClub
-  , repetition = 
-    Some 
-      { frequency = (dsl.every 1).weeks.on [Schema.DayOfWeek.Wednesday]
-      , stopCondition = Schema.StopRepitition.Never
-      }
+  , repetition = Some ((dsl.every 1).weeks.on [Schema.DayOfWeek.Wednesday]).stops.never
   , eventType = Some Schema.EventType.SocialEvent
   , revisions = [] : List Schema.EventRevision
   , signupUrl = None Text

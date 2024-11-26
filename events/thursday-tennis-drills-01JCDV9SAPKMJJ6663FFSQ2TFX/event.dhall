@@ -13,11 +13,7 @@ in
     , "The sessions are free for members but guests are welcome to come along for five taster sessions costing £5 each."
     ]
   , place = Schema.Place.Venue emberSportsClub
-  , repetition =
-      Some 
-        { frequency = (dsl.every 1).weeks.on [Schema.DayOfWeek.Thursday]
-        , stopCondition = Schema.StopRepitition.Never
-        }
+  , repetition = Some ((dsl.every 1).weeks.on [Schema.DayOfWeek.Thursday]).stops.never
   , eventType = Some Schema.EventType.SportsEvent
   , revisions = [] : List Schema.EventRevision
   , signupUrl = None Text

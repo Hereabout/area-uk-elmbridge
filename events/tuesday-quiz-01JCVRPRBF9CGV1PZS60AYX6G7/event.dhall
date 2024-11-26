@@ -12,11 +12,7 @@ in
     [ "1st prize is a £50 voucher with rollover jackpot quesations. Food is served until 10pm."
     ]
   , place = Schema.Place.Venue theRoyalGeorgeHersham
-  , repetition = 
-      Some 
-        { frequency = (dsl.every 1).weeks.on [Schema.DayOfWeek.Tuesday]
-        , stopCondition = Schema.StopRepitition.Never
-        }
+  , repetition = Some ((dsl.every 1).weeks.on [Schema.DayOfWeek.Tuesday]).stops.never
   , eventType = Some Schema.EventType.SocialEvent
   , revisions = [] : List Schema.EventRevision
   , signupUrl = None Text
