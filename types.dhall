@@ -44,7 +44,7 @@ let Timestamp =
   , timeZone : TimeZone
   }
 
-let StopRepitition =
+let StopRepetition =
   < StopOn : Date
   | StopAfter : Natural
   | Never
@@ -60,12 +60,12 @@ let DayOfWeek =
   | Sunday
   >
 
-let WeeklyPeridiocity =
+let WeeklyPeriodicity =
   { n : Natural
   , daysOfTheWeek : List DayOfWeek 
   }
 
-let MonthlyPeridiocity =
+let MonthlyPeriodicity =
   < OnDays : { nMonthly : Natural, daysOfTheMonth : List Natural }
   | OnFirst : { nMonthly : Natural, occurrence : Natural, daysOfTheWeek: List DayOfWeek }
   | OnLast : { nMonthly : Natural, occurrence: Natural, daysOfTheWeek: List DayOfWeek }
@@ -73,17 +73,15 @@ let MonthlyPeridiocity =
 
 let Periodicity =
   < Daily : Natural
-  | Weekly : WeeklyPeridiocity
-  | MonthlyOn : MonthlyPeridiocity 
+  | Weekly : WeeklyPeriodicity
+  | MonthlyOn : MonthlyPeriodicity 
   | Fixed : List Timestamp
   >
 
 let RepetitionPattern =
   { frequency : Periodicity
-  , stopCondition : StopRepitition
+  , stopCondition : StopRepetition
   }
-
-
 
 let RevisionType =
   < Cancelled
@@ -179,9 +177,9 @@ in
   , DayOfWeek = DayOfWeek
   , Duration = Duration
   , Url = Url
-  , StopRepitition = StopRepitition
-  , WeeklyPeridiocity = WeeklyPeridiocity
-  , MonthlyPeridiocity = MonthlyPeridiocity
+  , StopRepetition = StopRepetition
+  , WeeklyPeriodicity = WeeklyPeriodicity
+  , MonthlyPeriodicity = MonthlyPeriodicity
   , Periodicity = Periodicity
   , Community = Community
   , MultiPolygon = MultiPolygon

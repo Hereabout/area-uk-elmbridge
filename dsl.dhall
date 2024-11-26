@@ -14,7 +14,7 @@ let every = \(n : Natural) ->
   , months = 
     { onCalendarDays = \(days : List Natural) ->
       Schema.Periodicity.MonthlyOn (
-        Schema.MonthlyPeridiocity.OnDays 
+        Schema.MonthlyPeriodicity.OnDays 
           { nMonthly = n
           , daysOfTheMonth = days
           }  
@@ -24,7 +24,7 @@ let every = \(n : Natural) ->
         { week = 
           { on = \(days : List Schema.DayOfWeek) ->
             Schema.Periodicity.MonthlyOn (
-              Schema.MonthlyPeridiocity.OnFirst 
+              Schema.MonthlyPeriodicity.OnFirst 
                 { nMonthly = n
                 , occurrence = 1
                 , daysOfTheWeek = days 
@@ -37,7 +37,7 @@ let every = \(n : Natural) ->
         { week = 
           { on = \(days : List Schema.DayOfWeek) ->
             Schema.Periodicity.MonthlyOn (
-              Schema.MonthlyPeridiocity.OnFirst 
+              Schema.MonthlyPeriodicity.OnFirst 
                 { nMonthly = n
                 , occurrence = 2
                 , daysOfTheWeek = days 
@@ -50,7 +50,7 @@ let every = \(n : Natural) ->
         { week = 
           { on = \(days : List Schema.DayOfWeek) ->
             Schema.Periodicity.MonthlyOn (
-              Schema.MonthlyPeridiocity.OnFirst 
+              Schema.MonthlyPeriodicity.OnFirst 
                 { nMonthly = n
                 , occurrence = 3
                 , daysOfTheWeek = days 
@@ -63,7 +63,7 @@ let every = \(n : Natural) ->
         { week = 
           { on = \(days : List Schema.DayOfWeek) ->
             Schema.Periodicity.MonthlyOn (
-              Schema.MonthlyPeridiocity.OnFirst 
+              Schema.MonthlyPeriodicity.OnFirst 
                 { nMonthly = n
                 , occurrence = 4
                 , daysOfTheWeek = days 
@@ -76,7 +76,7 @@ let every = \(n : Natural) ->
         { week = 
           { on = \(days : List Schema.DayOfWeek) ->
             Schema.Periodicity.MonthlyOn (
-              Schema.MonthlyPeridiocity.OnLast 
+              Schema.MonthlyPeriodicity.OnLast 
                 { nMonthly = n
                 , occurrence = 2
                 , daysOfTheWeek = days 
@@ -89,7 +89,7 @@ let every = \(n : Natural) ->
         { week = 
           { on = \(days : List Schema.DayOfWeek) ->
             Schema.Periodicity.MonthlyOn (
-              Schema.MonthlyPeridiocity.OnLast 
+              Schema.MonthlyPeriodicity.OnLast 
                 { nMonthly = n
                 , occurrence = 1
                 , daysOfTheWeek = days 
