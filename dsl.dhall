@@ -5,15 +5,15 @@ let periodityToRepetitionPattern = \(sp : Schema.Periodicity) ->
   { stops =
     { never =
         { frequency = sp
-        , stopCondition = Schema.StopRepitition.Never
+        , stopCondition = Schema.StopRepetition.Never
         }
     , on = \(date : Date) -> 
         { frequency = sp
-        , stopCondition = Schema.StopRepitition.StopOn date
+        , stopCondition = Schema.StopRepetition.StopOn date
         }
     , after = \(n : Natural) ->
         { frequency = sp
-        , stopCondition = Schema.StopRepitition.StopAfter n
+        , stopCondition = Schema.StopRepetition.StopAfter n
         }
     }
   }

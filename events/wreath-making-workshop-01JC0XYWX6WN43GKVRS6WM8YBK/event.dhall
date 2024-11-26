@@ -19,7 +19,7 @@ in
         { frequency = Schema.Periodicity.Fixed 
           [ 2024-12-11T19:00:00Z 
           ]
-        , stopCondition = Schema.StopRepitition.Never
+        , stopCondition = Schema.StopRepetition.Never
         }
   , eventType = None Schema.EventType
   , revisions = [] : List Schema.EventRevision

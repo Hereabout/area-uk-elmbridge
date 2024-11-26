@@ -58,7 +58,7 @@ in
           , 2024-12-31T10:30:00Z
           , 2024-12-31T14:30:00Z
           ]
-        , stopCondition = Schema.StopRepitition.Never
+        , stopCondition = Schema.StopRepetition.Never
         }
   , eventType = Some Schema.EventType.TheatreEvent
   , revisions = [] : List Schema.EventRevision
