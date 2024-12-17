@@ -3,6 +3,7 @@
 , ./bluehouse-artspace-01JDJKNBH6AC7CXSJ46DHDWET2/venue.dhall
 , ./bricklayers-arms-01JD252HGW97ZG3P2T908ZSYC6/venue.dhall
 , ./christ-church-01JC1WASN8N2287EAW7BBRZNTR/venue.dhall
+, ./craft-my-day-thames-ditton-01JFATS336H3WYYJZMKSS8B9JV/venue.dhall
 , ./ember-sports-club-01JC7A12E92S9TWYPA3AM4FPMD/venue.dhall
 , ./esher-library-01J8FWH1S4TQWJGP4YGS5GZ7Z0/venue.dhall
 , ./esher-rugby-club-01JB5D4KVJRJ08ESBR27FR1AZ7/venue.dhall
@@ -22,4 +23,5 @@
 , ./the-royal-george-01JCVAZ89PJ15EJ2S1DRJSTZ1V/venue.dhall
 , ./the-wheatsheaf-01J8FWH1S4TQWJGP4YGS5GZ7Z3/venue.dhall
 , ./watermans-arms-01JCVJWN4JB0BNND214STQQ2S1/venue.dhall
+, ./ye-olde-swan-01JFANN01VBYGA1PZC1NTSB4W5/venue.dhall
 ]
