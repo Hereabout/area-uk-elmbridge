@@ -190,7 +190,7 @@ in
       , id = "01J8FWH1S4TQWJGP4YGS5GZ7NH01J8FWH1S4TQWJGP4YGS5GZ7PZ"
       , content = Schema.Content.ParagraphsContent [""]
       , centre = { latitude = 51.387309, longitude = -0.324971 }
-      , image = None Prelude.Location.Type
+      , image = Some ./thames-ditton.jpg as Location
       }
     , { name = "Walton-on-Thames"
       , id = "01J8FWH1S4TQWJGP4YGS5GZ7NH01J8FWH1S4TQWJGP4YGS5GZ7Q0"
@@ -202,7 +202,7 @@ in
       , id = "01J8FWH1S4TQWJGP4YGS5GZ7NH01J8FWH1S4TQWJGP4YGS5GZ7Q1"
       , content = Schema.Content.ParagraphsContent [""]
       , centre = { latitude = 51.365587, longitude = -0.378917 }
-      , image = None Prelude.Location.Type
+      , image = Some ./west-end.jpg as Location
       }
     , { name = "Weston Green"
       , id = "01J8FWH1S4TQWJGP4YGS5GZ7NH01J8FWH1S4TQWJGP4YGS5GZ7Q2"
